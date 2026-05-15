@@ -1,0 +1,764 @@
+```html
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Một Chút Nắng</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link href="https://fonts.googleapis.com/css2?family=Patrick+Hand&family=Quicksand:wght@400;500;700&display=swap" rel="stylesheet">
+
+  <style>
+
+    *{
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
+    }
+
+    body{
+      font-family:'Quicksand',sans-serif;
+      background:#fff8ef;
+      color:#5b3b1d;
+      overflow-x:hidden;
+      position:relative;
+    }
+
+    .bg-text{
+      position:absolute;
+      font-size:100px;
+      opacity:0.03;
+      font-weight:bold;
+      color:#dba43d;
+      z-index:0;
+      pointer-events:none;
+    }
+
+    .bg1{
+      top:250px;
+      left:-50px;
+      transform:rotate(-12deg);
+    }
+
+    .bg2{
+      top:1000px;
+      right:-30px;
+      transform:rotate(10deg);
+    }
+
+    .icon{
+      position:absolute;
+      opacity:0.12;
+      z-index:0;
+      pointer-events:none;
+      animation:float 4s ease-in-out infinite;
+    }
+
+    .sun{
+      top:100px;
+      right:120px;
+      font-size:90px;
+    }
+
+    .heart{
+      top:500px;
+      left:100px;
+      font-size:60px;
+    }
+
+    .flower{
+      bottom:200px;
+      right:80px;
+      font-size:70px;
+    }
+
+    .sparkle{
+      top:700px;
+      right:300px;
+      font-size:50px;
+    }
+
+    .bg-circle{
+      position:absolute;
+      border-radius:50%;
+      background:#ffe8a3;
+      opacity:0.2;
+      filter:blur(20px);
+      z-index:0;
+    }
+
+    .circle1{
+      width:250px;
+      height:250px;
+      top:200px;
+      left:-100px;
+    }
+
+    .circle2{
+      width:300px;
+      height:300px;
+      bottom:200px;
+      right:-120px;
+    }
+
+    .circle3{
+      width:180px;
+      height:180px;
+      top:700px;
+      left:40%;
+    }
+
+    @keyframes float{
+
+      0%{
+        transform:translateY(0px);
+      }
+
+      50%{
+        transform:translateY(-10px);
+      }
+
+      100%{
+        transform:translateY(0px);
+      }
+
+    }
+
+    @keyframes bounce{
+
+      0%{
+        transform:translateY(0px);
+      }
+
+      50%{
+        transform:translateY(-10px);
+      }
+
+      100%{
+        transform:translateY(0px);
+      }
+
+    }
+
+    header{
+      position:relative;
+      z-index:2;
+      text-align:center;
+      padding:60px 20px 20px;
+    }
+
+    .main-logo{
+
+      width:340px;
+
+      max-width:90%;
+
+      animation:float 4s ease-in-out infinite;
+
+      filter:
+      drop-shadow(0 10px 15px rgba(0,0,0,0.08));
+    }
+
+    .quote{
+
+      width:90%;
+      max-width:720px;
+
+      margin:40px auto;
+
+      background:#fffdf7;
+
+      border:3px dashed #f0c56c;
+
+      border-radius:25px;
+
+      padding:30px;
+
+      text-align:center;
+
+      font-size:30px;
+
+      line-height:1.6;
+
+      font-family:'Patrick Hand',cursive;
+
+      box-shadow:0 10px 20px rgba(0,0,0,0.05);
+
+      position:relative;
+      z-index:2;
+    }
+
+    .quote span{
+      color:#f0a500;
+    }
+
+    .menu-title{
+
+      position:relative;
+      z-index:2;
+
+      text-align:center;
+
+      font-size:75px;
+
+      margin:40px 0;
+
+      font-family:'Patrick Hand',cursive;
+
+      color:#7a4a18;
+    }
+
+    .products{
+
+      position:relative;
+      z-index:2;
+
+      width:92%;
+
+      margin:auto;
+
+      display:grid;
+
+      grid-template-columns:
+      repeat(auto-fit,minmax(260px,1fr));
+
+      gap:30px;
+
+      padding-bottom:80px;
+    }
+
+    .card{
+
+      background:#fffaf2;
+
+      border:3px dashed #f0c56c;
+
+      border-radius:30px;
+
+      padding:35px 20px;
+
+      text-align:center;
+
+      transition:0.3s;
+
+      box-shadow:0 10px 20px rgba(0,0,0,0.05);
+    }
+
+    .card:hover{
+      transform:translateY(-8px);
+    }
+
+    .food-icon{
+
+      font-size:100px;
+
+      margin-bottom:20px;
+
+      animation:bounce 3s infinite;
+    }
+
+    .card h2{
+
+      font-family:'Patrick Hand',cursive;
+
+      font-size:40px;
+
+      margin-bottom:10px;
+    }
+
+    .price{
+
+      color:#e3a008;
+
+      font-size:28px;
+
+      font-weight:bold;
+
+      margin-bottom:20px;
+    }
+
+    button{
+
+      width:100%;
+
+      padding:14px;
+
+      border:none;
+
+      border-radius:15px;
+
+      background:#f6b93b;
+
+      color:white;
+
+      font-size:18px;
+
+      font-weight:bold;
+
+      cursor:pointer;
+
+      transition:0.3s;
+    }
+
+    button:hover{
+      background:#e0a125;
+    }
+
+    footer{
+
+      position:relative;
+
+      z-index:2;
+
+      padding:70px 20px;
+
+      background:#fff3da;
+
+      border-top:4px dashed #f0c56c;
+
+      margin-top:40px;
+    }
+
+    .footer-box{
+
+      max-width:900px;
+
+      margin:auto;
+
+      text-align:center;
+    }
+
+    footer h2{
+
+      font-size:42px;
+
+      margin-bottom:25px;
+
+      font-family:'Patrick Hand',cursive;
+
+      color:#7a4a18;
+    }
+
+    .footer-text{
+
+      font-size:20px;
+
+      line-height:1.8;
+
+      color:#6a4b2c;
+
+      margin-bottom:30px;
+    }
+
+    .footer-quote{
+
+      font-size:28px;
+
+      font-family:'Patrick Hand',cursive;
+
+      color:#e3a008;
+
+      margin-bottom:40px;
+    }
+
+    .contact{
+
+      background:#fffaf2;
+
+      border:3px dashed #f0c56c;
+
+      border-radius:25px;
+
+      padding:30px;
+
+      margin-bottom:35px;
+    }
+
+    .contact h3{
+
+      font-size:30px;
+
+      margin-bottom:20px;
+
+      color:#7a4a18;
+    }
+
+    .contact p{
+
+      font-size:20px;
+
+      margin:12px 0;
+    }
+
+    .contact a{
+
+      color:#e3a008;
+
+      text-decoration:none;
+
+      font-weight:bold;
+    }
+
+    .thanks{
+
+      font-size:26px;
+
+      color:#7a4a18;
+    }
+
+    .thanks span{
+
+      color:#f0a500;
+
+      font-weight:bold;
+    }
+
+    @media(max-width:768px){
+
+      body{
+        overflow-x:hidden;
+      }
+
+      header{
+        padding:25px 15px 0px;
+      }
+
+      .main-logo{
+        width:220px;
+      }
+
+      .quote{
+        width:92%;
+        font-size:20px;
+        padding:18px;
+        line-height:1.5;
+        margin:20px auto;
+      }
+
+      .menu-title{
+        font-size:48px;
+        margin:10px 0 20px;
+      }
+
+      .products{
+        width:94%;
+        grid-template-columns:repeat(2,1fr);
+        gap:16px;
+      }
+
+      .card{
+        padding:22px 12px;
+      }
+
+      .food-icon{
+        font-size:65px;
+      }
+
+      .card h2{
+        font-size:24px;
+      }
+
+      .price{
+        font-size:20px;
+      }
+
+      button{
+        font-size:14px;
+        padding:10px;
+      }
+
+      footer{
+        padding:50px 15px;
+      }
+
+      footer h2{
+        font-size:34px;
+      }
+
+      .footer-text{
+        font-size:18px;
+      }
+
+      .footer-quote{
+        font-size:24px;
+      }
+
+      .contact{
+        padding:22px;
+      }
+
+      .contact h3{
+        font-size:26px;
+      }
+
+      .contact p{
+        font-size:17px;
+        word-break:break-word;
+      }
+
+      .thanks{
+        font-size:22px;
+      }
+
+      .bg-text{
+        font-size:60px;
+      }
+
+      .sun{
+        font-size:60px;
+        right:20px;
+      }
+
+      .heart{
+        font-size:40px;
+        left:20px;
+      }
+
+      .flower{
+        font-size:50px;
+        right:20px;
+      }
+
+      .sparkle{
+        font-size:35px;
+        right:40px;
+      }
+
+    }
+
+  </style>
+
+</head>
+
+<body>
+
+  <div class="bg-text bg1">
+    Một Chút Nắng
+  </div>
+
+  <div class="bg-text bg2">
+    Lan Tỏa Yêu Thương
+  </div>
+
+  <div class="bg-circle circle1"></div>
+  <div class="bg-circle circle2"></div>
+  <div class="bg-circle circle3"></div>
+
+  <div class="icon sun">☀️</div>
+  <div class="icon heart">💛</div>
+  <div class="icon flower">🌼</div>
+  <div class="icon sparkle">✨</div>
+
+  <header>
+
+    <img
+      class="main-logo"
+      src="logo.png.png"
+      alt="Một Chút Nắng Logo"
+    />
+
+  </header>
+
+  <div class="quote">
+
+    “ Mỗi món hàng nhỏ <br>
+
+    góp thành một <span>tia nắng</span> <br>
+
+    sưởi ấm những mảnh đời khó khăn ”
+
+  </div>
+
+  <h1 class="menu-title">
+    MENU
+  </h1>
+
+  <section class="products">
+
+    <div class="card">
+
+      <div class="food-icon">
+        🥟
+      </div>
+
+      <h2>Mandu Chiên</h2>
+
+      <p class="price">
+        35.000đ
+      </p>
+
+      <button onclick="buyProduct('Mandu Chiên')">
+        Mua ngay
+      </button>
+
+    </div>
+
+    <div class="card">
+
+      <div class="food-icon">
+        🍈
+      </div>
+
+      <h2>Trà Dưa Lưới</h2>
+
+      <p class="price">
+        25.000đ
+      </p>
+
+      <button onclick="buyProduct('Trà Dưa Lưới')">
+        Mua ngay
+      </button>
+
+    </div>
+
+    <div class="card">
+
+      <div class="food-icon">
+        🍋
+      </div>
+
+      <h2>Trà Tắc</h2>
+
+      <p class="price">
+        20.000đ
+      </p>
+
+      <button onclick="buyProduct('Trà Tắc')">
+        Mua ngay
+      </button>
+
+    </div>
+
+    <div class="card">
+
+      <div class="food-icon">
+        🌯
+      </div>
+
+      <h2>Chả Giò</h2>
+
+      <p class="price">
+        30.000đ
+      </p>
+
+      <button onclick="buyProduct('Chả Giò')">
+        Mua ngay
+      </button>
+
+    </div>
+
+    <div class="card">
+
+      <div class="food-icon">
+        🟩
+      </div>
+
+      <h2>Rau Câu</h2>
+
+      <p class="price">
+        15.000đ
+      </p>
+
+      <button onclick="buyProduct('Rau Câu')">
+        Mua ngay
+      </button>
+
+    </div>
+
+    <div class="card">
+
+      <div class="food-icon">
+        🍮
+      </div>
+
+      <h2>Bánh Flan</h2>
+
+      <p class="price">
+        18.000đ
+      </p>
+
+      <button onclick="buyProduct('Bánh Flan')">
+        Mua ngay
+      </button>
+
+    </div>
+
+  </section>
+
+  <footer>
+
+    <div class="footer-box">
+
+      <h2>
+        ☀️ Dự Án Gây Quỹ “Một Chút Nắng”
+      </h2>
+
+      <p class="footer-text">
+
+        Mỗi món hàng bạn mua không chỉ là một món ăn,
+        mà còn là một phần yêu thương được sẻ chia
+        đến những mảnh đời khó khăn.
+
+      </p>
+
+      <p class="footer-quote">
+
+        “ Một chút nắng nhỏ hôm nay,
+        có thể trở thành ánh sáng của ai đó ngày mai. ”
+
+      </p>
+
+      <div class="contact">
+
+        <h3>📞 Liên Hệ</h3>
+
+        <p>
+          Gmail:
+          <a href="mailto:lightstrng094@gmail.com">
+            lightstrng094@gmail.com
+          </a>
+        </p>
+
+        <p>
+          Hotline:
+          <a href="tel:0943752569">
+            0943752569
+          </a>
+        </p>
+
+      </div>
+
+      <div class="thanks">
+
+        Cảm ơn bạn vì đã lan tỏa
+        <span>một chút nắng 💛</span>
+
+      </div>
+
+    </div>
+
+  </footer>
+
+  <script>
+
+    function buyProduct(productName){
+
+      const phone = "84943752569";
+
+      const zaloURL =
+      `https://zalo.me/${phone}`;
+
+      window.open(zaloURL,'_blank');
+    }
+
+  </script>
+
+</body>
+
+</html>
+```
