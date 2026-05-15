@@ -11,526 +11,525 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-  <link href="https://fonts.googleapis.com/css2?family=Patrick+Hand&family=Quicksand:wght@400;500;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Patrick+Hand&family=Quicksand:wght@400;500;700&display=swap"
+    rel="stylesheet">
 
   <style>
-
-    *{
-      margin:0;
-      padding:0;
-      box-sizing:border-box;
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
     }
 
-    body{
-      font-family:'Quicksand',sans-serif;
-      background:#fff8ef;
-      color:#5b3b1d;
-      overflow-x:hidden;
-      position:relative;
+    body {
+      font-family: 'Quicksand', sans-serif;
+      background: #fff8ef;
+      color: #5b3b1d;
+      overflow-x: hidden;
+      position: relative;
     }
 
-    .bg-text{
-      position:absolute;
-      font-size:100px;
-      opacity:0.03;
-      font-weight:bold;
-      color:#dba43d;
-      z-index:0;
-      pointer-events:none;
+    .bg-text {
+      position: absolute;
+      font-size: 100px;
+      opacity: 0.03;
+      font-weight: bold;
+      color: #dba43d;
+      z-index: 0;
+      pointer-events: none;
     }
 
-    .bg1{
-      top:250px;
-      left:-50px;
-      transform:rotate(-12deg);
+    .bg1 {
+      top: 250px;
+      left: -50px;
+      transform: rotate(-12deg);
     }
 
-    .bg2{
-      top:1000px;
-      right:-30px;
-      transform:rotate(10deg);
+    .bg2 {
+      top: 1000px;
+      right: -30px;
+      transform: rotate(10deg);
     }
 
-    .icon{
-      position:absolute;
-      opacity:0.12;
-      z-index:0;
-      pointer-events:none;
-      animation:float 4s ease-in-out infinite;
+    .icon {
+      position: absolute;
+      opacity: 0.12;
+      z-index: 0;
+      pointer-events: none;
+      animation: float 4s ease-in-out infinite;
     }
 
-    .sun{
-      top:100px;
-      right:120px;
-      font-size:90px;
+    .sun {
+      top: 100px;
+      right: 120px;
+      font-size: 90px;
     }
 
-    .heart{
-      top:500px;
-      left:100px;
-      font-size:60px;
+    .heart {
+      top: 500px;
+      left: 100px;
+      font-size: 60px;
     }
 
-    .flower{
-      bottom:200px;
-      right:80px;
-      font-size:70px;
+    .flower {
+      bottom: 200px;
+      right: 80px;
+      font-size: 70px;
     }
 
-    .sparkle{
-      top:700px;
-      right:300px;
-      font-size:50px;
+    .sparkle {
+      top: 700px;
+      right: 300px;
+      font-size: 50px;
     }
 
-    .bg-circle{
-      position:absolute;
-      border-radius:50%;
-      background:#ffe8a3;
-      opacity:0.2;
-      filter:blur(20px);
-      z-index:0;
+    .bg-circle {
+      position: absolute;
+      border-radius: 50%;
+      background: #ffe8a3;
+      opacity: 0.2;
+      filter: blur(20px);
+      z-index: 0;
     }
 
-    .circle1{
-      width:250px;
-      height:250px;
-      top:200px;
-      left:-100px;
+    .circle1 {
+      width: 250px;
+      height: 250px;
+      top: 200px;
+      left: -100px;
     }
 
-    .circle2{
-      width:300px;
-      height:300px;
-      bottom:200px;
-      right:-120px;
+    .circle2 {
+      width: 300px;
+      height: 300px;
+      bottom: 200px;
+      right: -120px;
     }
 
-    .circle3{
-      width:180px;
-      height:180px;
-      top:700px;
-      left:40%;
+    .circle3 {
+      width: 180px;
+      height: 180px;
+      top: 700px;
+      left: 40%;
     }
 
-    @keyframes float{
+    @keyframes float {
 
-      0%{
-        transform:translateY(0px);
+      0% {
+        transform: translateY(0px);
       }
 
-      50%{
-        transform:translateY(-10px);
+      50% {
+        transform: translateY(-10px);
       }
 
-      100%{
-        transform:translateY(0px);
-      }
-
-    }
-
-    @keyframes bounce{
-
-      0%{
-        transform:translateY(0px);
-      }
-
-      50%{
-        transform:translateY(-10px);
-      }
-
-      100%{
-        transform:translateY(0px);
+      100% {
+        transform: translateY(0px);
       }
 
     }
 
-    header{
-      position:relative;
-      z-index:2;
-      text-align:center;
-      padding:60px 20px 20px;
+    @keyframes bounce {
+
+      0% {
+        transform: translateY(0px);
+      }
+
+      50% {
+        transform: translateY(-10px);
+      }
+
+      100% {
+        transform: translateY(0px);
+      }
+
     }
 
-    .main-logo{
+    header {
+      position: relative;
+      z-index: 2;
+      text-align: center;
+      padding: 60px 20px 20px;
+    }
 
-      width:340px;
+    .main-logo {
 
-      max-width:90%;
+      width: 340px;
 
-      animation:float 4s ease-in-out infinite;
+      max-width: 90%;
+
+      animation: float 4s ease-in-out infinite;
 
       filter:
-      drop-shadow(0 10px 15px rgba(0,0,0,0.08));
+        drop-shadow(0 10px 15px rgba(0, 0, 0, 0.08));
     }
 
-    .quote{
+    .quote {
 
-      width:90%;
-      max-width:720px;
+      width: 90%;
+      max-width: 720px;
 
-      margin:40px auto;
+      margin: 40px auto;
 
-      background:#fffdf7;
+      background: #fffdf7;
 
-      border:3px dashed #f0c56c;
+      border: 3px dashed #f0c56c;
 
-      border-radius:25px;
+      border-radius: 25px;
 
-      padding:30px;
+      padding: 30px;
 
-      text-align:center;
+      text-align: center;
 
-      font-size:30px;
+      font-size: 30px;
 
-      line-height:1.6;
+      line-height: 1.6;
 
-      font-family:'Patrick Hand',cursive;
+      font-family: 'Patrick Hand', cursive;
 
-      box-shadow:0 10px 20px rgba(0,0,0,0.05);
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05);
 
-      position:relative;
-      z-index:2;
+      position: relative;
+      z-index: 2;
     }
 
-    .quote span{
-      color:#f0a500;
+    .quote span {
+      color: #f0a500;
     }
 
-    .menu-title{
+    .menu-title {
 
-      position:relative;
-      z-index:2;
+      position: relative;
+      z-index: 2;
 
-      text-align:center;
+      text-align: center;
 
-      font-size:75px;
+      font-size: 75px;
 
-      margin:40px 0;
+      margin: 40px 0;
 
-      font-family:'Patrick Hand',cursive;
+      font-family: 'Patrick Hand', cursive;
 
-      color:#7a4a18;
+      color: #7a4a18;
     }
 
-    .products{
+    .products {
 
-      position:relative;
-      z-index:2;
+      position: relative;
+      z-index: 2;
 
-      width:92%;
+      width: 92%;
 
-      margin:auto;
+      margin: auto;
 
-      display:grid;
+      display: grid;
 
       grid-template-columns:
-      repeat(auto-fit,minmax(260px,1fr));
+        repeat(auto-fit, minmax(260px, 1fr));
 
-      gap:30px;
+      gap: 30px;
 
-      padding-bottom:80px;
+      padding-bottom: 80px;
     }
 
-    .card{
+    .card {
 
-      background:#fffaf2;
+      background: #fffaf2;
 
-      border:3px dashed #f0c56c;
+      border: 3px dashed #f0c56c;
 
-      border-radius:30px;
+      border-radius: 30px;
 
-      padding:35px 20px;
+      padding: 35px 20px;
 
-      text-align:center;
+      text-align: center;
 
-      transition:0.3s;
+      transition: 0.3s;
 
-      box-shadow:0 10px 20px rgba(0,0,0,0.05);
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05);
     }
 
-    .card:hover{
-      transform:translateY(-8px);
+    .card:hover {
+      transform: translateY(-8px);
     }
 
-    .food-icon{
+    .food-icon {
 
-      font-size:100px;
+      font-size: 100px;
 
-      margin-bottom:20px;
+      margin-bottom: 20px;
 
-      animation:bounce 3s infinite;
+      animation: bounce 3s infinite;
     }
 
-    .card h2{
+    .card h2 {
 
-      font-family:'Patrick Hand',cursive;
+      font-family: 'Patrick Hand', cursive;
 
-      font-size:40px;
+      font-size: 40px;
 
-      margin-bottom:10px;
+      margin-bottom: 10px;
     }
 
-    .price{
+    .price {
 
-      color:#e3a008;
+      color: #e3a008;
 
-      font-size:28px;
+      font-size: 28px;
 
-      font-weight:bold;
+      font-weight: bold;
 
-      margin-bottom:20px;
+      margin-bottom: 20px;
     }
 
-    button{
+    button {
 
-      width:100%;
+      width: 100%;
 
-      padding:14px;
+      padding: 14px;
 
-      border:none;
+      border: none;
 
-      border-radius:15px;
+      border-radius: 15px;
 
-      background:#f6b93b;
+      background: #f6b93b;
 
-      color:white;
+      color: white;
 
-      font-size:18px;
+      font-size: 18px;
 
-      font-weight:bold;
+      font-weight: bold;
 
-      cursor:pointer;
+      cursor: pointer;
 
-      transition:0.3s;
+      transition: 0.3s;
     }
 
-    button:hover{
-      background:#e0a125;
+    button:hover {
+      background: #e0a125;
     }
 
-    footer{
+    footer {
 
-      position:relative;
+      position: relative;
 
-      z-index:2;
+      z-index: 2;
 
-      padding:70px 20px;
+      padding: 70px 20px;
 
-      background:#fff3da;
+      background: #fff3da;
 
-      border-top:4px dashed #f0c56c;
+      border-top: 4px dashed #f0c56c;
 
-      margin-top:40px;
+      margin-top: 40px;
     }
 
-    .footer-box{
+    .footer-box {
 
-      max-width:900px;
+      max-width: 900px;
 
-      margin:auto;
+      margin: auto;
 
-      text-align:center;
+      text-align: center;
     }
 
-    footer h2{
+    footer h2 {
 
-      font-size:42px;
+      font-size: 42px;
 
-      margin-bottom:25px;
+      margin-bottom: 25px;
 
-      font-family:'Patrick Hand',cursive;
+      font-family: 'Patrick Hand', cursive;
 
-      color:#7a4a18;
+      color: #7a4a18;
     }
 
-    .footer-text{
+    .footer-text {
 
-      font-size:20px;
+      font-size: 20px;
 
-      line-height:1.8;
+      line-height: 1.8;
 
-      color:#6a4b2c;
+      color: #6a4b2c;
 
-      margin-bottom:30px;
+      margin-bottom: 30px;
     }
 
-    .footer-quote{
+    .footer-quote {
 
-      font-size:28px;
+      font-size: 28px;
 
-      font-family:'Patrick Hand',cursive;
+      font-family: 'Patrick Hand', cursive;
 
-      color:#e3a008;
+      color: #e3a008;
 
-      margin-bottom:40px;
+      margin-bottom: 40px;
     }
 
-    .contact{
+    .contact {
 
-      background:#fffaf2;
+      background: #fffaf2;
 
-      border:3px dashed #f0c56c;
+      border: 3px dashed #f0c56c;
 
-      border-radius:25px;
+      border-radius: 25px;
 
-      padding:30px;
+      padding: 30px;
 
-      margin-bottom:35px;
+      margin-bottom: 35px;
     }
 
-    .contact h3{
+    .contact h3 {
 
-      font-size:30px;
+      font-size: 30px;
 
-      margin-bottom:20px;
+      margin-bottom: 20px;
 
-      color:#7a4a18;
+      color: #7a4a18;
     }
 
-    .contact p{
+    .contact p {
 
-      font-size:20px;
+      font-size: 20px;
 
-      margin:12px 0;
+      margin: 12px 0;
     }
 
-    .contact a{
+    .contact a {
 
-      color:#e3a008;
+      color: #e3a008;
 
-      text-decoration:none;
+      text-decoration: none;
 
-      font-weight:bold;
+      font-weight: bold;
     }
 
-    .thanks{
+    .thanks {
 
-      font-size:26px;
+      font-size: 26px;
 
-      color:#7a4a18;
+      color: #7a4a18;
     }
 
-    .thanks span{
+    .thanks span {
 
-      color:#f0a500;
+      color: #f0a500;
 
-      font-weight:bold;
+      font-weight: bold;
     }
 
-    @media(max-width:768px){
+    @media(max-width:768px) {
 
-      body{
-        overflow-x:hidden;
+      body {
+        overflow-x: hidden;
       }
 
-      header{
-        padding:25px 15px 0px;
+      header {
+        padding: 25px 15px 0px;
       }
 
-      .main-logo{
-        width:220px;
+      .main-logo {
+        width: 220px;
       }
 
-      .quote{
-        width:92%;
-        font-size:20px;
-        padding:18px;
-        line-height:1.5;
-        margin:20px auto;
+      .quote {
+        width: 92%;
+        font-size: 20px;
+        padding: 18px;
+        line-height: 1.5;
+        margin: 20px auto;
       }
 
-      .menu-title{
-        font-size:48px;
-        margin:10px 0 20px;
+      .menu-title {
+        font-size: 48px;
+        margin: 10px 0 20px;
       }
 
-      .products{
-        width:94%;
-        grid-template-columns:repeat(2,1fr);
-        gap:16px;
+      .products {
+        width: 94%;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 16px;
       }
 
-      .card{
-        padding:22px 12px;
+      .card {
+        padding: 22px 12px;
       }
 
-      .food-icon{
-        font-size:65px;
+      .food-icon {
+        font-size: 65px;
       }
 
-      .card h2{
-        font-size:24px;
+      .card h2 {
+        font-size: 24px;
       }
 
-      .price{
-        font-size:20px;
+      .price {
+        font-size: 20px;
       }
 
-      button{
-        font-size:14px;
-        padding:10px;
+      button {
+        font-size: 14px;
+        padding: 10px;
       }
 
-      footer{
-        padding:50px 15px;
+      footer {
+        padding: 50px 15px;
       }
 
-      footer h2{
-        font-size:34px;
+      footer h2 {
+        font-size: 34px;
       }
 
-      .footer-text{
-        font-size:18px;
+      .footer-text {
+        font-size: 18px;
       }
 
-      .footer-quote{
-        font-size:24px;
+      .footer-quote {
+        font-size: 24px;
       }
 
-      .contact{
-        padding:22px;
+      .contact {
+        padding: 22px;
       }
 
-      .contact h3{
-        font-size:26px;
+      .contact h3 {
+        font-size: 26px;
       }
 
-      .contact p{
-        font-size:17px;
-        word-break:break-word;
+      .contact p {
+        font-size: 17px;
+        word-break: break-word;
       }
 
-      .thanks{
-        font-size:22px;
+      .thanks {
+        font-size: 22px;
       }
 
-      .bg-text{
-        font-size:60px;
+      .bg-text {
+        font-size: 60px;
       }
 
-      .sun{
-        font-size:60px;
-        right:20px;
+      .sun {
+        font-size: 60px;
+        right: 20px;
       }
 
-      .heart{
-        font-size:40px;
-        left:20px;
+      .heart {
+        font-size: 40px;
+        left: 20px;
       }
 
-      .flower{
-        font-size:50px;
-        right:20px;
+      .flower {
+        font-size: 50px;
+        right: 20px;
       }
 
-      .sparkle{
-        font-size:35px;
-        right:40px;
+      .sparkle {
+        font-size: 35px;
+        right: 40px;
       }
 
     }
-
   </style>
 
 </head>
@@ -556,11 +555,7 @@
 
   <header>
 
-    <img
-      class="main-logo"
-      src="logo.png.png"
-      alt="Một Chút Nắng Logo"
-    />
+    <img class="main-logo" src="logo.png" alt="Một Chút Nắng Logo" />
 
   </header>
 
@@ -746,14 +741,14 @@
 
   <script>
 
-    function buyProduct(productName){
+    function buyProduct(productName) {
 
       const phone = "84943752569";
 
       const zaloURL =
-      `https://zalo.me/${phone}`;
+        `https://zalo.me/${phone}`;
 
-      window.open(zaloURL,'_blank');
+      window.open(zaloURL, '_blank');
     }
 
   </script>
